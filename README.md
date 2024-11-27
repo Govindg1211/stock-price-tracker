@@ -1,33 +1,119 @@
-# stock-price-tracker
-Overview
-The Stock Price Tracker is a Python-based graphical user interface (GUI) application that allows users to track real-time stock prices from the National Stock Exchange (NSE) and Bombay Stock Exchange (BSE) in India. The application fetches stock prices using web scraping techniques and provides an intuitive interface for users to enter stock tickers, select exchanges, and view or manage their stock wishlist.
+# Stock-Price-Tracker
+# Real-Time Stock Price Tracker - User Manual
 
-Prerequisites
-To run this application successfully, you need to have Python installed on your system along with several libraries. Here’s a list of prerequisites:
-Python: Ensure you have Python installed (preferably Python 3.x).
+Track the stock prices of your favorite companies in real-time.
 
-Required Libraries:
-requests: For making HTTP requests to fetch stock data.
-beautifulsoup4: For parsing HTML content.
-tkinter: For creating the GUI (comes pre-installed with Python).
-bse: For fetching BSE-related data (install using pip install bse).
-Installation Instructions
-Install Python from python.org.
-Install required libraries using pip:
+## Prerequisites
 
-pip install requests beautifulsoup4 bse
+Before you begin, ensure that you have the following software and tools installed on your machine:
 
-Ensure you have an image file named stocks.png in your specified directory (write your image path here) for the background.
+- **Python 3.x** - This project is developed using Python.
+- **pip** - Python's package installer, required to install dependencies.
+- **Internet Connection** - The tracker fetches real-time stock data via an API.
+- **Code Editor** - Use any code editor like VS Code, PyCharm, Sublime Text, etc.
 
-How to Use
-Launch the application by running the Python script.
-Enter a valid stock ticker symbol in the "Enter Stock Ticker" field.
-Select either 'NSE' or 'BSE' from the dropdown menu.
-Click "Fetch Price" to see the current price of the entered stock displayed on the screen.
-To add a stock to your wishlist, click "Add to Wishlist." This will create a card showing the ticker and its current price.
-To remove a stock from your wishlist, click the "Remove" button on its respective card.
-The application will automatically update prices every 10 seconds.
+## Features
 
-Conclusion
-This Stock Price Tracker application provides an effective way for users to monitor their favorite stocks in real time, manage their wishlist, and gain insights into market trends through an easy-to-use interface. With its combination of web scraping and GUI elements, it serves as a practical tool for both novice and experienced investors alike.
+The Stock Price Tracker comes with the following key features:
 
+- **Real-time stock price tracking**: Fetches and displays the latest stock prices every minute.
+- **Multiple stock symbols**: Supports tracking for multiple companies such as AAPL (Apple), TSLA (Tesla), and more.
+- **Terminal-based interface**: Easy to use and lightweight terminal-based interface for tracking stocks.
+- **Automatic price updates**: Prices are automatically updated every minute, providing real-time data.
+- **Cross-platform**: Works on all platforms (Windows, macOS, and Linux).
+- **Simple to use**: Minimal configuration required, just install the dependencies and start tracking.
+
+## Installation Steps
+
+Follow these steps to install and set up the stock price tracker:
+
+1. **Step 1:** Clone or download the repository to your local machine.
+
+    ```bash
+    git clone https://github.com/VARUNs2196/stock-price-tracker.git
+    ```
+
+2. **Step 2:** Navigate to the project directory in the terminal.
+
+    ```bash
+    cd stock-price-tracker
+    ```
+
+3. **Step 3:** Create a virtual environment (optional but recommended).
+
+    ```bash
+    python -m venv venv
+    ```
+
+4. **Step 4:** Activate the virtual environment.
+
+    - On Linux/macOS:
+
+    ```bash
+    source venv/bin/activate
+    ```
+
+    - On Windows:
+
+    ```bash
+    venv\Scripts\activate
+    ```
+
+5. **Step 5:** Install the required dependencies using pip.
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## How to Use the Stock Price Tracker
+
+Once everything is set up, follow these steps to use the tracker:
+
+1. **Step 1:** Open a terminal window and run the Python script to start tracking stock prices.
+
+    ```bash
+    python track_stock.py
+    ```
+
+2. **Step 2:** The tracker will prompt you to enter a stock symbol (e.g., 'AAPL' for Apple, 'GOOG' for Google, 'TSLA' for Tesla).
+
+3. **Step 3:** The tracker will fetch and display the real-time stock price for the symbol entered. Prices will be updated every minute.
+
+4. **Step 4:** To stop the tracker at any time, press **Ctrl + C** in the terminal.
+
+## Screenshot of Stock Price Tracker in Action
+<div style="display: flex; justify-content: center; gap: 50px;">
+    <img src="pics/stock1.png" alt="Stock Price Tracker in Action" width="500" height="400" />
+    <img src="pics/stock2.png" alt="Stock Price Tracker in Action" width="500" height="400" />
+</div>
+
+
+
+## Troubleshooting
+
+If you encounter any issues, here are some common solutions:
+
+- **Problem:** "ModuleNotFoundError" or missing dependencies.  
+  **Solution:** Make sure you have installed the necessary dependencies using `pip install -r requirements.txt`.
+
+- **Problem:** "Invalid stock symbol" error.  
+  **Solution:** Double-check that the stock symbol is correct. You can find valid stock symbols on stock market websites like Yahoo Finance or Google Finance.
+
+- **Problem:** Stock price is not updating.  
+  **Solution:** Ensure you have an active internet connection. The script requires internet access to fetch real-time data.
+
+- **Problem:** The script crashes or doesn't run.  
+  **Solution:** Check if all prerequisites are installed correctly, and ensure your Python version is up to date.
+
+## Contact Support
+
+If you need additional help, feel free to contact us:
+
+- **Email:** [support@stocktracker.com](mailto:support@stocktracker.com)
+- **GitHub Repository:** [https://github.com/Govindg1211/stock-price-tracker](https://github.com/Govindg1211/stock-price-tracker)
+
+We will be happy to assist you with any questions or issues you may have!
+
+---
+
+&copy; 2024 Real-Time Stock Price Tracker | All Rights Reserved
