@@ -1,4 +1,3 @@
-# Stock-Price-Tracker
 # Real-Time Stock Price Tracker - User Manual
 
 Track the stock prices of your favorite companies in real-time.
